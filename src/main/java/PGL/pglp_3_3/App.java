@@ -6,8 +6,9 @@ package PGL.pglp_3_3;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws unsupportedOperationException
     {
-        System.out.println( "Hello World!" );
+    	Robot R=new Robot(new Position(3,2),Direction.Down);
+    	R.avance();
     }
 }

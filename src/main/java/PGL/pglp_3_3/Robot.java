@@ -10,19 +10,19 @@ public class Robot {
 		 dir = d;
 	 }
 	 
-	 void avance() {
+	 void avance() throws unsupportedOperationException {
 		 if(dir.equals(Direction.Up)) {
-				this.pos.setY(1);
+				this.pos.setY(this.pos.getY()+1);
 			}
 		 	else if(dir.equals(Direction.Down)) {
-				this.pos.setY(-1);
+				this.pos.setY(this.pos.getY()-1);
 			}
 			else if(dir.equals(Direction.Left)) {
-				this.pos.setX(-1);
+				this.pos.setX(this.pos.getX()-1);
 			}
 			
 			else {
-				this.pos.setX(1);
+				this.pos.setX(this.pos.getX()+1);
 			}
 	    }
 	 
