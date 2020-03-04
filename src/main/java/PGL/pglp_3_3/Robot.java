@@ -3,7 +3,7 @@ package PGL.pglp_3_3;
  */
 public class Robot {
 	/**
-	*/
+	 */
 	private Position pos;
 	private Direction dir;
 	/**
@@ -13,11 +13,11 @@ public class Robot {
 	Robot(final Position p, final Direction d) {
 		 pos = new Position(p.getX(), p.getY());
 		 dir = d;
-	} 
+	}
 	/**
-	 * @throws unsupportedOperationException
-	 */
-	void avance() throws unsupportedOperationException {
+	* @throws unsupportedOperationException
+	*/
+	public void avance() throws unsupportedOperationException {
 		 if (dir.equals(Direction.Up)) {
 				this.pos.setY(this.pos.getY() + 1);
 			} else if (dir.equals(Direction.Down)) {
@@ -30,7 +30,7 @@ public class Robot {
 	    }
 	 /**
 	 */
-	 public void tourne() {
+	 final public void tourne() {
 		 if (dir.equals(Direction.Up)) {
 				this.dir = Direction.Right;
 			} else if (dir.equals(Direction.Left)) {
@@ -56,14 +56,14 @@ public class Robot {
 	 /**
 	  * @param p Position 
 	  */
-	 public void setPos(final Position p) {
+	 final public void setPos(final Position p) {
 		 pos.setX(p.getX());
 		 pos.setY(p.getY());
 	 }
 	 /**
 	  * @param d Direction
  	  */
-	 public void setPos(final Direction d) {
+	 final public void setPos(final Direction d) {
 		 dir = d;
 	 }
 }
