@@ -27,7 +27,18 @@ public class Robot {
 	    }
 	 
 	 public void tourne () {
-		 
+		 if(dir.equals(Direction.Up)) {
+				this.dir=Direction.Right;
+			}
+			else if(dir.equals(Direction.Left)) {
+				this.dir=Direction.Up;
+			}
+			else if(dir.equals(Direction.Right)) {
+				this.dir=Direction.Down;
+			}
+			else {
+				this.dir=Direction.Left;
+			}
 	 }
 	  
 }
