@@ -4,7 +4,7 @@ public class TestRobotStatique {
 	public void TestAvance() throws unsupportedOperationException {
 		Robot A=new Robot(new Position(3,2),Direction.Right);
 		A.avance();
-		assert(A.pos.getX()==3);
+		assert(A.getPos().getX()==3);
 		
 	}
 }

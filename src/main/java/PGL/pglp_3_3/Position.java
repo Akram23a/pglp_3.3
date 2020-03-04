@@ -1,36 +1,49 @@
 package PGL.pglp_3_3;
-
+/**
+ * @author Akram
+ */
 public class Position {
+	/**
+	 */
 	private int x;
 	private int y;
-	
-	Position(int a, int b){
+	/**
+	 * @param a first
+	 * @param b second
+	 */
+	Position(final int a, final int b) {
 		setX(a);
 		setY(b);
 	}
-	Position(Position P){
-		setX(P.getX());
-		setY(P.getY());
+	/**
+	 * @param p position
+	 */
+	Position(final Position p) {
+		setX(p.getX());
+		setY(p.getY());
 	}
-	
-	
-	
-	
-	public int getY() {
+	/**
+	 * @return y
+	 */
+	final public int getY() {
 		return y;
 	}
-
-	public void setY(int y) {
-		this.y = y;
+	/**
+	 * @param y1 is y1
+	 */
+	final public void setY(final int y1) {
+		this.y = y1;
 	}
-
-	public int getX() {
+	/**
+	 * @return x
+	 */
+	final public int getX() {
 		return x;
 	}
-
-	public void setX(int x) {
-		this.x = x;
+	/**
+	 * @param x1 is x1
+	 */
+	final public void setX(final int x1) {
+		this.x = x1;
 	}
-	
-	
 }

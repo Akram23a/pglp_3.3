@@ -1,27 +1,30 @@
 package PGL.pglp_3_3;
 import java.util.ArrayList;
-
-
+/**
+ * @author Akram
+ */
 public class EnsembleRobots {
 	ArrayList<Robot> listeRobs;
-	
+	/**
+	 */
 	public EnsembleRobots() {
 		listeRobs = new ArrayList<Robot>();
 	}
-	
-	public void addRobot(Robot Rob) {
-		listeRobs.add(Rob);
+	/**
+	* @param rob Robot
+	*/
+	public void addRobot(final Robot rob) {
+		listeRobs.add(rob);
 	}
-	
-	public void bougerTousRobots() throws unsupportedOperationException{
-		
-		for(Robot R: listeRobs) {
-			try{
-				R.avance();
-			}catch(unsupportedOperationException e) {
-				
-			}
+	/**
+	 * @throws unsupportedOperationException
+	 */
+	public void bougerTousRobots() throws unsupportedOperationException {
+		for (Robot r: listeRobs) {
+			try {
+				r.avance();
+			} catch(unsupportedOperationException e) {
 			}
 		}
-				
-	}
+	}		
+}

@@ -8,14 +8,14 @@ public class TestRobot {
 	public void TestAvance() throws unsupportedOperationException {
 		Robot A=new Robot(new Position(3,2),Direction.Right);
 		A.avance();
-		assert(A.pos.getX()==4);
+		assert(A.getPos().getX() == 4);
 		
 	}
-	
+	/**
+	 */
 	public void TestTourne() {
 		Robot A=new Robot(new Position(3,2),Direction.Right);
 		A.tourne();
-		assert(A.dir==Direction.Down);
-
+		assert(A.getDir() == Direction.Down);
 	}
 }
